@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - StroyRab</title>
+   @* <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />*@
+    <link rel="stylesheet" href="~/css/shared_script.js" />
+    <link rel="stylesheet" href="~/css/Shared.css" />
+    <link rel="stylesheet" href="~/css/home.css" />
+    
+</head>
+<body>
+    @await Html.PartialAsync("_LoginRegistrationPartial")
+    <div id="header-top">
+        <div class="logo">Дом и Строй</div>
+        <div class="button-header">
+            <button class="button" id="click-to-hide">Войти</button>
+        </div>
+    </div>
+    <img class="img-header" src="~/images/p O.jpg" />
+    <div id="header-bottom">
+        <div class="menu">
+            <ul>
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#contact">Контакты</a></li>
+                <li><a href="#partners">Партнеры</a></li>
+                <li><a href="#services">Услуги</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container">
+        @RenderBody()
+    </div>
+
+    <footer>
+        <div class="footer-left">
+            <div class="logo">Дом и Строй</div>
+            <p>
+            </p>
+            Магазин "Дом и Строй" — это ваш надежный партнер в мире строительных и отделочных материалов. Мы предлагаем широкий ассортимент продукции, которая поможет вам реализовать любой строительный проект, будь то ремонт квартиры или возведение нового дома. У нас вы найдете все необходимые товары для строительства, отделки, благоустройства и ремонта — от фундамента до крыши.
+            <div class="footer-TravelAgency">
+                &copy; 2024 - StroyRab Duba
+            </div>
+        </div>
+        <div class="footer-right">
+            <div class="menu">
+                <ul>
+                    
+                    <li><a href="#home">Главная</a></li>
+                    <li><a href="#contact">Kонтакты</a></li> 
+                    <li><a href="#countries">Партнеры</a></li>
+                    <li><a href="#services">Уcлyrи</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="~/js/home_script.js"></script>
+    <script src="~/css/shared_script.js"></script>
+    <script src="~/js/login_and_registration_script.js"></script>
+</body>
+</html>
